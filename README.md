@@ -3,6 +3,9 @@
 - Perform path finding using A* Algorithm
 - Perform path scheduling using Ant Colony Optimization Algorithm, Genetic Algorithm and Simulated Annealing with starting point fixed.
 
+##FlowChart
+![flowChart.svg](flowChart.svg)
+
 ## Heuristic Functions available : 
 | Heuristic | Parameter | Formula                       | Remark                            |
 |-----------|-----------|-------------------------------|-----------------------------------|
