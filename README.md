@@ -2,6 +2,7 @@
 - Perform maze exploration using DFS and BFS
 - Perform path finding using A* Algorithm
 - Perform path scheduling using Ant Colony Optimization Algorithm, Genetic Algorithm and Simulated Annealing with starting point fixed.
+- The path scheduling algorithm will fail when the maze given contains too many walls since the heuristic will no longer guide the algorithm in a correct way, it will actually mislead it due to the existence of walls
 
 ##FlowChart
 ![flowChart.svg](flowChart.svg)
