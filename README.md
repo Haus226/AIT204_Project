@@ -2,9 +2,16 @@
 - Perform maze exploration using DFS and BFS
 - Perform path finding using A* Algorithm
 - Perform path scheduling using Ant Colony Optimization Algorithm, Genetic Algorithm and Simulated Annealing with starting point fixed.
-- The path scheduling algorithm will fail when the maze given contains too many walls since the heuristic will no longer guide the algorithm in a correct way, it will actually mislead it due to the existence of walls
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When utilizing metaheuristic algorithms like ACO, GA, and SA for multiple target A* pathfinding on grid maps with numerous walls, the Euclidean distance heuristic may not provide effective guidance. In such cases, the Euclidean distance heuristic can mislead these algorithms towards suboptimal solutions, as it assumes a continuous space and does not consider obstacles.
 
-##FlowChart
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To overcome this issue, it is advisable to employ alternative heuristics that are better suited for grid-based environments. The Manhattan distance heuristic, also known as the taxicab distance, is often preferred in such scenarios. Unlike the Euclidean distance heuristic, the Manhattan distance considers obstacles and accurately estimates distances by summing the absolute differences in the x and y coordinates.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By utilizing the Manhattan distance heuristic instead of the Euclidean distance heuristic, the metaheuristic algorithms can be guided more effectively in grid-based environments with walls or obstacles. This adjustment helps to achieve better solutions and prevents the algorithms from being misled by the presence of obstacles.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is important to note that selecting the most appropriate heuristic depends on the specific characteristics of the problem domain. Evaluating different heuristics can help determine the one that performs optimally for the given scenario.
+
+## FlowChart
 ![flowChart.svg](flowChart.svg)
 
 ## Heuristic Functions available : 
